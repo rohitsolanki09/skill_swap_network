@@ -1,0 +1,108 @@
+.wrap {}
+
+.header {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  align-items: center;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.name { margin: 0; }
+
+.aboutSection {
+  margin: 20px 0;
+}
+
+.aboutSection h3 {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.about {
+  margin: 12px 0 18px 0;
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+}
+
+.list {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.listItem {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  background: #eef4ff;
+  color: var(--color-primary);
+  border-radius: 999px;
+  margin-right: 8px;
+}
+
+.level {
+  font-size: 12px;
+  color: #666;
+}
+
+.metric {
+  display: grid;
+  place-items: center;
+  padding: 18px 0;
+}
+
+.metricValue {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--color-accent);
+}
+
+.metricLabel {
+  color: #666;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
+
+

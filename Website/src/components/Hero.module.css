@@ -1,0 +1,72 @@
+.hero {
+  background: linear-gradient(180deg, #ffffff, #f7f7f7);
+  padding: 48px 0 24px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.copy {}
+
+.title {
+  margin: 0 0 10px 0;
+  font-size: clamp(28px, 5vw, 44px);
+  line-height: 1.1;
+}
+
+.subtitle {
+  color: #4a4a4a;
+  max-width: 680px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.art {
+  position: relative;
+  height: 280px;
+}
+
+.card1, .card2, .card3 {
+  position: absolute;
+  border-radius: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.card1 {
+  top: 18px;
+  left: 30px;
+  width: 160px;
+  height: 110px;
+  background: linear-gradient(135deg, var(--color-primary), #71a8ff);
+}
+
+.card2 {
+  bottom: 14px;
+  right: 24px;
+  width: 180px;
+  height: 120px;
+  background: linear-gradient(135deg, var(--color-accent), #a47aff);
+}
+
+.card3 {
+  top: 60px;
+  right: 120px;
+  width: 120px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-secondary), #ffd866);
+}
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; }
+  .art { height: 180px; }
+}
+
+

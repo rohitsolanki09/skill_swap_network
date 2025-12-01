@@ -1,0 +1,107 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logoMark {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+}
+
+.logoText {
+  color: var(--color-text);
+}
+
+.menuBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #333;
+  margin: 4px 0;
+  transition: background 0.2s ease;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.link {
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.link:hover {
+  background: #f0f4ff;
+  color: var(--color-primary);
+}
+
+.active {
+  color: var(--color-primary);
+}
+
+.cta {
+  margin-left: 6px;
+}
+
+.logoutBtn {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+}
+
+.logoutBtn:hover {
+  background: #f0f4ff;
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .menuBtn { display: block; }
+  .nav {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    left: 0;
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    display: none;
+    flex-direction: column;
+    padding: 12px 20px 16px;
+  }
+  .open { display: flex; }
+}
+
+
